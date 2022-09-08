@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 int main () {
-    printf("Hola que ase!\n");
-    printf("Hola que ase! otra ves\n");
+
+    char nombre[100];
+    printf("Escribe tu nombre:");
+    /* leemos el teclado */
+    scanf("%s", nombre);
+    /* imprimimos en pantalla */
+    printf("Bienvenido %s!\n",nombre);
+
     return 0;
 }
