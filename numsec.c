@@ -31,9 +31,16 @@ int main()
       printf("Jugador-> Tienes: %d intentos.\n", contador);
       printf("Jugador-> Escribe tu número: ");
       scanf("%d", &num);
+      if(numSecreto < num){
+        printf("Demasiado grande!\n");
+      }else if(numSecreto > num){
+        printf("Demasiado pequeño!\n");
+      }else{
+        break;
+      }
       /* contador = contador -1;*/
       --contador;
-    }while(numSecreto != num && contador > 0);
+    }while(contador > 0);
 
     if(contador > 0){
       printf("Enhorabuena campeón, erés un Uri Geller!!\n");
